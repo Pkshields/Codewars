@@ -1,2 +1,3 @@
-# Codewars
-Solutions to kata I've solved on Codewars
+# Codewars Solutions - Kotlin
+
+Solutions to kata I have solved on [Codewars](https://codewars.com), written in Kotlin.
