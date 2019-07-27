@@ -7,8 +7,8 @@ fun incrementString(str: String) =
         "${it[0]}$numberAsString"
     } ?: ""
 
-fun String.split(regex: String) = Regex(regex).find(this)?.groupValues?.let { it.subList(1, it.count()) }
-fun String.toIntOrZero() = this.toIntOrNull() ?: 0
+private fun String.split(regex: String) = Regex(regex).find(this)?.groupValues?.let { it.subList(1, it.count()) }
+private fun String.toIntOrZero() = this.toIntOrNull() ?: 0
 
 /**
  * URL: https://www.codewars.com/kata/string-incrementer/kotlin
