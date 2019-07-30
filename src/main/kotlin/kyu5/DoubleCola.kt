@@ -12,11 +12,11 @@ fun whoIsNext(names: List<String>, n: Int): String {
     return names[nthPosInOriginalQueue]
 }
 
-fun <T> List<T>.numberOfCompletedQueues(n: Int) = floor(log((n/count()) + 1, 2)).toInt()
-fun <T> List<T>.drinksDrankAfterQueuesCompleted(numQueues: Int) = count() * (2.pow(numQueues) - 1)
+private fun <T> List<T>.numberOfCompletedQueues(n: Int) = floor(log((n/count()) + 1, 2)).toInt()
+private fun <T> List<T>.drinksDrankAfterQueuesCompleted(numQueues: Int) = count() * (2.pow(numQueues) - 1)
 
-fun log(x: Int, base: Int) = log(x.toDouble(), base.toDouble())
-fun Int.pow(power: Int) = this.toDouble().pow(power).toInt()
+private fun log(x: Int, base: Int) = log(x.toDouble(), base.toDouble())
+private fun Int.pow(power: Int) = this.toDouble().pow(power).toInt()
 
 /*
  * 5 names in list
