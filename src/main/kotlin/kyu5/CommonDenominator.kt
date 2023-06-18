@@ -21,7 +21,7 @@ object Fracts {
     }
 
     private fun calculateLowestCommonDenominator(denominators: List<Long>): Long {
-        val largestDenominator = denominators.max() ?: 0
+        val largestDenominator = denominators.maxOrNull() ?: 0
         return generateSequence(1) { it + 1 }
             .map { largestDenominator * it }
             .first { potentialDenominator -> denominators.all { potentialDenominator % it == 0L } }

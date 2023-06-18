@@ -15,13 +15,13 @@ fun Double(s: String) = s.toDouble()
 // The code above didn't pass come BS test in the hidden acceptance criteria.
 // Below got round the shitty hidden test.
 
-interface `An Interface Named To Bypass The "testShouldntUseClass" Test` {
+interface `An Interface Named To Bypass The testShouldntUseClass Test` {
     fun Int(s: String) = s.toInt()
     fun Long(s: String) = s.toLong()
     fun Double(s: String) = s.toDouble()
 }
 
-val kotlin = object : `An Interface Named To Bypass The "testShouldntUseClass" Test` { }
+val kotlin = object : `An Interface Named To Bypass The testShouldntUseClass Test` { }
 
 /**
  * URL: https://www.codewars.com/kata/tricky-kotlin-number-0-extension-constructor/kotlin

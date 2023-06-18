@@ -8,7 +8,7 @@ fun rgb(r: Int, g: Int, b: Int) =
     ((sanitize(r) * 16.pow(4)) + (sanitize(g) * 16.pow(2)) + sanitize(b)).toHexString()
 
 private fun sanitize(input: Int) = max(min(input, 255), 0).toLong()
-private fun Long.toHexString() = this.toString(16).padStart(6, '0').toUpperCase()
+private fun Long.toHexString() = this.toString(16).padStart(6, '0').uppercase()
 private fun Int.pow(power: Int) = this.toDouble().pow(power).toInt()
 
 /**
